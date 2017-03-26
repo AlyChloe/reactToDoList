@@ -1,10 +1,24 @@
+import ReactDOM from 'react-dom';
 import React from 'react';
-import {render} from 'react-dom';
 
-class App extends React.Component {
-  render () {
-    return <p> Hello There!</p>;
+var Application = React.createClass({
+  render: function() {
+    return (
+      <div className="app-container">
+        <header>
+          <div className="addItem">
+            <input type="text" placeholder="List item..." />
+            <p>for</p>
+            <input type="text" placeholder="Choose list..." />
+            <button>Add</button>
+          </div>
+        </header>
+        <aside>
+          <div className="logo"></div>
+        </aside>
+      </div>
+    )
   }
-}
+});
 
-render(<App/>, document.getElementById('app'));
+ReactDOM.render(<Application/>, document.getElementById('container'));
