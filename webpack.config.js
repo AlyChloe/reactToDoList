@@ -1,4 +1,6 @@
 // npm run div - runs the Webpack in the watch mode
+// npm start - starts up electron
+// grunt watch - compiles js/sass files
 
 var webpack = require('webpack');
 var path = require('path');

@@ -1,0 +1,30 @@
+header {
+  width: 100%;
+  border-bottom: #eee solid 1px;
+  overflow: hidden;
+
+  .logo, .addItem {
+    float: left;
+  }
+
+  .logo {
+    width: 15%;
+    text-align: center;
+  }
+
+  .addItem {
+    width: 85%;
+
+    input, p {
+      display: inline-block;
+    }
+
+    p {
+      padding: 0 20px;
+    }
+
+    button {
+      float: right;
+    }
+  }
+}
