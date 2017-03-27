@@ -18,7 +18,6 @@ module.exports = function(grunt) {
             },
             my_target: {
                 files: {
-                    'lib/js/app.min.js': ['lib/js/app.js'],
                     'lib/js/vendor.min.js': ['lib/js/vendor.js']
                 }
             }
@@ -30,7 +29,6 @@ module.exports = function(grunt) {
             },
             dist: {
                 files: {
-                    'lib/js/app.js': ['src/js/*.js'],
                     'lib/js/vendor.js': ['src/js/vendor/*.js']
                 }
             }
