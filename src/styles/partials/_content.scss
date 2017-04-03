@@ -1,0 +1,19 @@
+.content-container {
+  width: 100%;
+  overflow: hidden;
+
+  .content {
+    float: left;
+    width: 30%;
+    color: #555;
+    padding: 10px;
+
+    &:nth-child(2) {
+      width: 10%;
+    }
+
+    p {
+      font-size: 14px;
+    }
+  }
+}

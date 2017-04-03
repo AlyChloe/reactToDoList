@@ -2,7 +2,7 @@ header {
   width: 100%;
   border-bottom: #eee solid 1px;
   overflow: hidden;
-  padding-bottom: 15px;
+  font-family: 'Slabo 27px', serif;
 
   .logo, .addItem {
     float: left;
@@ -11,16 +11,23 @@ header {
   .logo {
     width: 15%;
     text-align: center;
+    margin-top: 7px;
 
     .fa {
-      font-size: 24px;
+      font-size: 45px;
+      color: #888;
     }
   }
 
   .addItem {
     width: 85%;
-    border-right: #ddd solid 1px;
-    padding-left: 20px;
+    border-left: #ddd solid 1px;
+    padding: 15px 0 20px 25px;
+
+    input {
+      width: 220px;
+      border: #ddd solid 1px;
+    }
 
     input, p {
       display: inline-block;
@@ -29,7 +36,7 @@ header {
     input, button {
       padding: 3px;
       border-radius: 4px;
-      border: #ddd solid 1px;
+      padding: 7px 10px;
     }
 
     p {
@@ -38,7 +45,11 @@ header {
 
     button {
       float: right;
-      width: 130px;
+      width: 150px;
+      border: transparent;
+      color: #fff;
+      background: #F2BB5A;
+      font-weight: bold;
     }
   }
 }

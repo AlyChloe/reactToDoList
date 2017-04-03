@@ -37,6 +37,67 @@ var Aside = React.createClass({
 })
 
 /****************************
+Titles Section
+****************************/
+var Titles = React.createClass({
+  render: function() {
+    return (
+      <div className="titles">
+        <div className="title">
+          <h3>Item</h3>
+        </div>
+        <div className="title">
+          <h3>Url</h3>
+        </div>
+        <div className="title">
+          <h3>Added</h3>
+        </div>
+      </div>
+    )
+  }
+})
+
+/****************************
+Content Section
+****************************/
+var Content = React.createClass({
+  render: function() {
+    return (
+      <div className="content-container">
+        <div className="content">
+          <p>Buy new shoes</p>
+        </div>
+        <div className="content">
+          <p>link</p>
+        </div>
+        <div className="content">
+          <p>3/24/2017</p>
+        </div>
+        <div className="content">
+          <i className="fa fa-check-circle"></i>
+          <i className="fa fa-times-circle"></i>
+          <i className="fa fa-pencil"></i>
+        </div>
+      </div>
+    )
+  }
+})
+
+/****************************
+Main Container Section
+****************************/
+var MainSection = React.createClass({
+  render: function() {
+    return (
+      <section className="main-container">
+        <Titles/>
+        <Content/>
+      </section>
+    )
+  }
+})
+
+/****************************
 Application
 ****************************/
 var Application = React.createClass({
@@ -45,6 +106,7 @@ var Application = React.createClass({
       <div className="app-container">
         <Header/>
         <Aside/>
+        <MainSection/>
       </div>
     )
   }

@@ -1,0 +1,23 @@
+.titles {
+
+  .title {
+    float: left;
+    width: 60%;
+    background: #eee;
+    color: #555;
+    padding: 10px;
+    font-family: 'Slabo 27px', serif;
+
+    &:nth-child(1) {
+      width: 30%;
+    }
+
+    &:nth-child(2) {
+      width: 10%;
+    }
+
+    h3 {
+
+    }
+  }
+}
